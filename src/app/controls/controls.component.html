@@ -1,0 +1,23 @@
+<ul class="controls">
+    <div>
+        <button [class.selected]="connectSelected === true" type="button" (click)="onSelectConnect()">
+            <span [ngStyle]="{'background-color': connectSelected ? '#49fe86' : 'red'}" class="badge"></span>
+            <span class="name">Connect</span>
+        </button>  
+    </div>
+    <div>        
+        <h2>Digital Input:</h2>        
+        <div class="digital">
+            <button [class.selected]="source1Selected === true" (click)="onSourceOne()" type="button">Source 1</button>
+            <button [class.selected]="source2Selected === true" (click)="onSourceTwo()" type="button">Source 2</button>    
+        </div>          
+    </div>    
+    <div class="analog">
+        <h2>Analog Input:</h2>
+        <input type="range" min="1" max="100" value="50" class="slider" (input)="onSliderInput($event)">
+    </div>    
+    <div class="string">
+        <h2>String Input:</h2>
+        <input type="text" id="string" (keyup.enter)="sendString($event)">
+    </div>
+</ul>
