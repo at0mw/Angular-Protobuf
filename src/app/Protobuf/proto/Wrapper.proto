@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message WrapperMessage {
+    enum MessageType {
+        Analog = 0;
+        Digital = 1;
+        String = 2;
+      }
+
+    MessageType messageType = 1;
+    bytes message = 2;
+  }

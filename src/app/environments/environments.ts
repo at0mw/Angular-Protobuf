@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    CHAT_URL: 'wss://chiseled-harmonious-fighter.glitch.me'
+    CHAT_URL: 'ws://10.100.203.21:8080/Remote'
 }

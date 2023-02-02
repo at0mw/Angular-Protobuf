@@ -1,7 +1,7 @@
 <ul class="controls">
     <div>
-        <button [class.selected]="connectSelected === true" type="button" (click)="onSelectConnect()">
-            <span [ngStyle]="{'background-color': connectSelected ? '#49fe86' : 'red'}" class="badge"></span>
+        <button [class.selected]="connected === true" type="button" (click)="onSelectConnect()">
+            <span [ngStyle]="{'background-color': connected ? '#49fe86' : 'red'}" class="badge"></span>
             <span class="name">Connect</span>
         </button>  
     </div>

@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message DigitalMessage {
+    int32 messageId = 1;
+    int32 joinIndex = 2;
+    bool state = 3;
+  }

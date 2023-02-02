@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message AnalogMessage {
+    int32 messageId = 1;
+    int32 joinIndex = 2;
+    int32 value = 3;
+  }
